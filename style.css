@@ -1,0 +1,145 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* header */
+.header {
+  background: #ffffff;
+  grid-column: 1 / -1;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+}
+
+.user-profile-header {
+  display: grid;
+  gap: 1em;
+}
+
+.search-bar {
+  display: flex;
+  gap: 1em;
+  flex: 1;
+  grid-row: 1;
+}
+
+.small-icon {
+  height: 20px;
+  align-self: center;
+}
+
+.search-input {
+  border-radius: 1em;
+  background-color: #e2e8f0;
+  border: none;
+  flex: 1;
+}
+
+.user-info {
+  display: flex;
+  grid-column: 1;
+  grid-row: 2;
+  gap: 1em;
+}
+
+.profile-image #lion {
+  max-height: 64px;
+}
+
+.profile-section {
+  grid-row: 1;
+  display: flex;
+  padding: 0 0.75em;
+  gap: 2em;
+  justify-content: end;
+  align-items: center;
+}
+
+.profile-picture {
+  height: 30px;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-row: 2;
+}
+
+button.btn {
+  background-color: #1992d4;
+  color: #ffffff;
+  border: none;
+  padding: 0.5em 2.3em;
+  border-radius: 1em;
+}
+
+.btn:hover {
+  background-color: #29aed6;
+}
