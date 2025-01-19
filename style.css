@@ -64,16 +64,17 @@ h6 {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2em 4fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 /* header */
 .header {
   background: #ffffff;
-  grid-column: 1 / -1;
+  grid-column: 3;
   padding: 2em;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2em;
 }
 
@@ -108,8 +109,9 @@ h6 {
   gap: 1em;
 }
 
-.profile-image #lion {
-  max-height: 64px;
+.large-icon {
+  /* height: max(65px, 20%); */
+  max-height: 65px;
 }
 
 .profile-section {
@@ -130,6 +132,7 @@ h6 {
   justify-content: space-around;
   align-items: center;
   grid-row: 2;
+  gap: 1em;
 }
 
 button.btn {
@@ -142,4 +145,25 @@ button.btn {
 
 .btn:hover {
   background-color: #29aed6;
+  cursor: pointer;
 }
+
+/* sidebar */
+aside {
+  grid-column: 1 / span 2;
+  grid-row: 1 / -1;
+  background-color: #1992d4;
+  padding: 1.75em;
+  color: #ffffff;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+/* main {
+  grid-column: 2;
+} */
