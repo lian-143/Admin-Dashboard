@@ -13,52 +13,120 @@
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <!-- first-column -->
-        <div class="search-bar">
+    <header class="header">
+      <!-- first-column -->
+      <div class="search-bar">
+        <img
+          class="small-icon"
+          src="icons/search-interface-symbol.png"
+          alt=""
+        />
+        <input class="search-input" type="text" />
+      </div>
+
+      <div class="user-info">
+        <div class="profile-image">
+          <img class="large-icon" src="icons/lion.png" alt="profile-image" />
+        </div>
+
+        <div class="user-greeting">
+          <h4>Hi there,</h4>
+          <h2>Morgan Oakley (@morgan)</h2>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <img class="small-icon" src="icons/bell.png" alt="bell-icon" />
+        <img class="small-icon" src="icons/lion.png" alt="lion" />
+        <h3>Morgan Oakley</h3>
+      </div>
+
+      <div class="header-buttons">
+        <button class="btn">New</button>
+        <button class="btn">Upload</button>
+        <button class="btn">Share</button>
+      </div>
+    </header>
+
+    <aside class="aside">
+      <div class="sidebar-header">
+        <img
+          class="large-icon"
+          src="icons/dashboard.png"
+          alt="dashboard-icon"
+        />
+        <h1>Dashboard</h1>
+      </div>
+
+      <div class="navigation-items">
+        <div class="navigation-icon">
           <img
-            class="small-icon"
-            src="icons/search-interface-symbol.png"
-            alt=""
+            class="navigation-icon"
+            src="icons/home.svg"
+            alt="homepage-icon"
           />
-          <input class="search-input" type="text" />
+          <img
+            class="navigation-icon"
+            src="icons/profile.svg"
+            alt="profile-icon"
+          />
+          <img
+            class="navigation-icon"
+            src="icons/messages.svg"
+            alt="messages-icon"
+          />
+          <img
+            class="navigation-icon"
+            src="icons/history.svg"
+            alt="history-icon"
+          />
+          <img class="navigation-icon" src="icons/tasks.svg" alt="task-icon" />
+          <img
+            class="navigation-icon"
+            src="icons/communities.svg"
+            alt="community-icon"
+          />
         </div>
 
-        <div class="user-info">
-          <div class="profile-image">
-            <img class="large-icon" src="icons/lion.png" alt="profile-image" />
-          </div>
+        <div class="navigation-details">
+          <p>Home</p>
+          <p>Profile</p>
+          <p>Messages</p>
+          <p>History</p>
+          <p>Tasks</p>
+          <p>Communities</p>
+        </div>
+      </div>
 
-          <div class="user-greeting">
-            <h4>Hi there,</h4>
-            <h2>Morgan Oakley (@morgan)</h2>
-          </div>
+      <div class="other-options">
+        <div class="navigation-icon">
+          <img
+            class="navigation-icon"
+            src="icons/settings.svg"
+            alt="homepage-icon"
+          />
+          <img
+            class="navigation-icon"
+            src="icons/support.svg"
+            alt="profile-icon"
+          />
+          <img
+            class="navigation-icon"
+            src="icons/privacy.svg"
+            alt="messages-icon"
+          />
         </div>
 
-        <div class="profile-section">
-          <img class="small-icon" src="icons/bell.png" alt="bell-icon" />
-          <img class="profile-picture" src="icons/lion.png" alt="lion" />
-          <h3>Morgan Oakley</h3>
+        <div class="navigation-details">
+          <p>Settings</p>
+          <p>Support</p>
+          <p>Privacy</p>
         </div>
+      </div>
+    </aside>
 
-        <div class="header-buttons">
-          <button class="btn">New</button>
-          <button class="btn">Upload</button>
-          <button class="btn">Share</button>
-        </div>
-      </header>
-
-      <aside class="aside">
-        <div class="sidebar-header">
-          <img class="large-icon" src="icons/dashboard.png" alt="" />
-          <h1>Dashboard</h1>
-        </div>
-      </aside>
-
-      <!-- <main>
+    <!-- <main>
         <h1>Your projects</h1>
       </main> -->
-    </div>
   </body>
 </html>
