@@ -20,19 +20,11 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 12em 2fr;
+  grid-template-rows: 12em 2fr 2.56em;
   grid-template-areas:
     "sidebar header"
-    "sidebar main";
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
+    "sidebar main"
+    "sidebar footer";
 }
 
 input,
@@ -82,6 +74,7 @@ hr {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 3em 1fr;
   align-items: center;
+  margin-bottom: 0.1em;
 }
 
 .user-profile-header {
@@ -213,7 +206,7 @@ button.btn {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 2.25em 1fr;
-  gap: 1em 0;
+  gap: 0.5em 0;
 }
 
 .container {
@@ -254,11 +247,23 @@ button.btn {
 }
 
 /* 2nd sidebar */
-.announcements {
-  padding: 2em;
+.info-dashboard-section {
   grid-row: 2;
   grid-column: 2;
+}
+
+.info-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.announcements {
+  padding: 2em;
+  grid-row: 1;
+  grid-column: 1;
   background: #ffffff;
+  border-radius: 0.3em;
 }
 
 .project-header,
@@ -272,4 +277,52 @@ button.btn {
 
 .news-item {
   font-weight: 700;
+}
+
+.trending-section {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.trending {
+  background: #ffffff;
+  padding: 1.5em;
+  display: flex;
+  gap: 1em;
+  border-radius: 0.3em;
+}
+
+.profile-picture {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+.user-info-snippet {
+  margin-bottom: 1em;
+  color: #6b6b6b;
+}
+
+/* shadow */
+.header,
+.box,
+.announcements {
+  box-shadow: 2px 2px #dfdede;
+}
+
+/* footer */
+.footer {
+  grid-area: footer;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section > p {
+  font-size: 0.7rem;
 }
